@@ -1,0 +1,8 @@
+# Desktop Services Store in Mac OS
+.DS_Store
+
+# Folder where front-end packages are stored
+node_modules
+
+# output dir
+dist

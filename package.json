@@ -1,0 +1,72 @@
+{
+  "name": "typescript-starter",
+  "type": "module",
+  "version": "0.0.0",
+  "private": false,
+  "description": "A typescript project startup template",
+  "author": "litingyes <luz.liting@gmail.com> (https://litingyes.top/)",
+  "license": "MIT",
+  "homepage": "https://github.com/litingyes/typescript-starter#readme",
+  "bugs": {
+    "url": "https://github.com/litingyes/typescript-starter/issues"
+  },
+  "keywords": [
+    "typescript",
+    "template",
+    "starter"
+  ],
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.mts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "format": "eslint --fix .",
+    "build": "unbuild",
+    "commit": "git-cz",
+    "release": "bumpp && npm publish",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.14.0",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cz-commitlint": "^19.6.1",
+    "@types/node": "22",
+    "bumpp": "^9.10.2",
+    "commitizen": "^4.3.1",
+    "eslint": "^9.18.0",
+    "eslint-plugin-format": "^1.0.1",
+    "husky": "^9.1.7",
+    "inquirer": "^12.3.3",
+    "lint-staged": "^15.4.3",
+    "typescript": "^5.7.3",
+    "unbuild": "^3.3.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

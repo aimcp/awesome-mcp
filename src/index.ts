@@ -1,0 +1,1 @@
+console.warn('typescript-starter')
