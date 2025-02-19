@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "servers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Server name"
+          },
+          "description": {
+            "type": "string",
+            "description": "Server description"
+          },
+          "repo_url": {
+            "type": "string",
+            "description": "The github repository url of the server"
+          },
+          "language": {
+            "type": "string",
+            "enum": ["typescript", "python"],
+            "description": "The programming language of the server"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "official",
+                "search",
+                "images",
+                "browser",
+                "storage",
+                "code",
+                "location & time",
+                "databases",
+                "monitor",
+                "analysis",
+                "notification"
+              ]
+            },
+            "minItems": 1,
+            "description": "The tags of the server"
+          }
+        },
+        "required": ["name", "repo_url", "language", "tags"],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "description": "An array of MCP server github repositories"
+    }
+  }
+}
