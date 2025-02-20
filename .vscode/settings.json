@@ -4,6 +4,7 @@
     "bumpp",
     "changelogithub",
     "commitlint",
+    "destr",
     "preid"
   ],
   // Disable the default formatter, use eslint instead
