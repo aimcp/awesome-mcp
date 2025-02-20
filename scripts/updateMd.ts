@@ -2,6 +2,11 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { destr } from 'destr'
 
+const LANGUAGE_ICONS = {
+  typescript: './images/languages/typescript.svg',
+  python: './images/languages/python.svg',
+}
+
 let mdContent = `# awesome-mcp\n`
 
 interface ServerItem {
@@ -9,7 +14,7 @@ interface ServerItem {
   description: string
   repo_url: string
   tags: string[]
-  language: string
+  language: 'typescript' | 'python'
 }
 const servers = destr<{ servers: ServerItem[] }>(readFileSync(resolve(__dirname, '../data/servers/list.json'), 'utf-8')).servers
 const serversGroup = servers.reduce<Map<string, ServerItem[]>>((map, item) => {
@@ -46,7 +51,7 @@ if (serversGroup.size) {
     mdContent += `\n### ${key}\n\n`
 
     items.forEach((item) => {
-      mdContent += `- [${item.name}](${item.repo_url}) - ${item.description}\n`
+      mdContent += `- [${item.name}](${item.repo_url}) - <img src="${LANGUAGE_ICONS[item.language]}" > ${item.description}\n`
     })
   })
 }
