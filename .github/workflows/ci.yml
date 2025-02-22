@@ -1,27 +1,45 @@
-name: Dependabot auto-merge
-on: pull_request
+name: Update docs
 
 permissions:
   contents: write
-  pull-requests: write
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - data/servers/list.json
 
 jobs:
-  dependabot:
+  update:
     runs-on: ubuntu-latest
-    if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v1
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
         with:
-          github-token: '${{ secrets.GITHUB_TOKEN }}'
-      - name: Approve a PR
-        run: gh pr review --approve "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - name: Enable auto-merge for Dependabot PRs
-        run: gh pr merge --auto --squash "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - run: |
+          pnpm install
+          pnpm update:docs
+          pnpm format
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "skip_commit=false" >> $GITHUB_ENV
+          else
+            echo "skip_commit=true" >> $GITHUB_ENV
+          fi
+
+      - name: Commit and push changes
+        if: env.skip_commit == 'false'
+        run: |
+          git config --global user.email "luz.liting@gmail.com"
+          git config --global user.name "litingyes"
+          git add .
+          git commit -m "chore(ci): update docs"
+          git pull origin main -r
+          git push origin main
