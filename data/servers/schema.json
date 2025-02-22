@@ -39,7 +39,9 @@
                 "databases",
                 "monitor",
                 "analysis",
-                "notification"
+                "notification",
+                "ai",
+                "integration"
               ]
             },
             "minItems": 1,
