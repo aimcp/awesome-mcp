@@ -43,3 +43,11 @@ jobs:
           git commit -m "chore(ci): update docs"
           git pull origin main -r
           git push origin main
+
+      - name: Trigger deploy to website
+        if: env.skip_commit == 'false'
+        run: |
+          netlify deploy \
+            --site ${{ secrets.NETLIFY_SITE_ID }} \
+            --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} \
+            --prod
