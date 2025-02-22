@@ -13,6 +13,7 @@
     "mcp"
   ],
   "scripts": {
+    "update:docs": "jiti ./scripts/updateReadme.ts",
     "lint": "eslint .",
     "format": "eslint --fix .",
     "commit": "git-cz",
