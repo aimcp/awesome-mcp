@@ -231,6 +231,13 @@
       "repo_url": "https://github.com/varunneal/spotify-mcp",
       "tags": ["integration", "monitor", "analysis"],
       "language": "python"
+    },
+    {
+      "name": "PBS API",
+      "description": "A standalone Model Context Protocol (MCP) server that allows AI models to access the Australian Pharmaceutical Benefits Scheme (PBS) API, which contains information about medicines, pricing, and availability in Australia.",
+      "repo_url": "https://github.com/matthewdcage/pbs-mcp-server",
+      "tags": ["storage", "integration"],
+      "language": "typescript"
     }
   ]
 }
