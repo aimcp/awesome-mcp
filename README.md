@@ -81,6 +81,7 @@
 - [Kubernetes](https://github.com/Flux159/mcp-server-kubernetes) - <img src="./images/languages/typescript.svg" > Manage pods, deployments, and services
 - [Linear](https://github.com/jerhadf/linear-mcp-server) - <img src="./images/languages/typescript.svg" > Project management and issue tracking
 - [Spotify](https://github.com/varunneal/spotify-mcp) - <img src="./images/languages/python.svg" > Control Spotify playback and manage playlists
+- [PBS API](https://github.com/matthewdcage/pbs-mcp-server) - <img src="./images/languages/typescript.svg" > A standalone Model Context Protocol (MCP) server that allows AI models to access the Australian Pharmaceutical Benefits Scheme (PBS) API, which contains information about medicines, pricing, and availability in Australia.
 
 ### location & time
 
@@ -117,3 +118,4 @@
 - [Neon](https://github.com/neondatabase/mcp-server-neon) - <img src="./images/languages/typescript.svg" > Interact with the Neon serverless Postgres platform
 - [Obsidian](https://github.com/smithery-ai/mcp-obsidian) - <img src="./images/languages/typescript.svg" > Read and search through Markdown notes in Obsidian vaults
 - [Qdrant](https://github.com/qdrant/mcp-server-qdrant) - <img src="./images/languages/python.svg" > Implement semantic memory using the Qdrant vector search engine
+- [PBS API](https://github.com/matthewdcage/pbs-mcp-server) - <img src="./images/languages/typescript.svg" > A standalone Model Context Protocol (MCP) server that allows AI models to access the Australian Pharmaceutical Benefits Scheme (PBS) API, which contains information about medicines, pricing, and availability in Australia.
