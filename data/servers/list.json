@@ -238,6 +238,55 @@
       "repo_url": "https://github.com/matthewdcage/pbs-mcp-server",
       "tags": ["storage", "integration"],
       "language": "typescript"
+    },
+    {
+      "name": "Playwright MCP",
+      "description": "A Model Context Protocol (MCP) server that provides browser automation capabilities using Playwright. This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.",
+      "repo_url": "https://github.com/microsoft/playwright-mcp",
+      "tags": ["browser"],
+      "language": "typescript"
+    },
+    {
+      "name": "BlenderMCP",
+      "description": "BlenderMCP connects Blender to Claude AI through the Model Context Protocol (MCP), allowing Claude to directly interact with and control Blender. This integration enables prompt assisted 3D modeling, scene creation, and manipulation.",
+      "repo_url": "https://github.com/ahujasid/blender-mcp",
+      "tags": ["integration"],
+      "language": "python"
+    },
+    {
+      "name": "WhatsApp MCP Server",
+      "description": "This is a Model Context Protocol (MCP) server for WhatsApp.With this you can search you personal Whatsapp messages, search your contacts and send messages to either individuals or groups.",
+      "repo_url": "https://github.com/lharries/whatsapp-mcp",
+      "tags": ["integration"],
+      "language": "typescript"
+    },
+    {
+      "name": "ghidraMCP",
+      "description": "ghidraMCP is an Model Context Protocol server for allowing LLMs to autonomously reverse engineer applications. It exposes numerous tools from core Ghidra functionality to MCP clients.",
+      "repo_url": "https://github.com/LaurieWired/GhidraMCP",
+      "tags": ["integration"],
+      "language": "python"
+    },
+    {
+      "name": "Framelink Figma MCP Server",
+      "description": "Give your coding agent access to your Figma data. Implement designs in any framework in one-shot.",
+      "repo_url": "https://github.com/GLips/Figma-Context-MCP",
+      "tags": ["integration"],
+      "language": "typescript"
+    },
+    {
+      "name": "Firecrawl MCP Server",
+      "description": "A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for web scraping capabilities.",
+      "repo_url": "https://github.com/mendableai/firecrawl-mcp-server",
+      "tags": ["integration"],
+      "language": "typescript"
+    },
+    {
+      "name": "Unity MCP",
+      "description": "A Unity package that enables seamless communication between Unity and Large Language Models (LLMs) like Claude Desktop via the Model Context Protocol (MCP). This server acts as a bridge, allowing Unity to send commands to and receive responses from MCP-compliant tools, empowering developers to automate workflows, manipulate assets, and control the Unity Editor programmatically.",
+      "repo_url": "https://github.com/justinpbarnett/unity-mcp",
+      "tags": ["integration"],
+      "language": "python"
     }
   ]
 }

@@ -40,6 +40,7 @@
 - [Fetch](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) - <img src="./images/languages/python.svg" > A Model Context Protocol server that provides web content fetching capabilities. This server enables LLMs to retrieve and process content from web pages, converting HTML to markdown for easier consumption.
 - [Puppeteer](https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer) - <img src="./images/languages/typescript.svg" > A Model Context Protocol server that provides browser automation capabilities using Puppeteer. This server enables LLMs to interact with web pages, take screenshots, and execute JavaScript in a real browser environment.
 - [Search1API](https://github.com/fatwang2/search1api-mcp) - <img src="./images/languages/typescript.svg" > Unified API for search, crawling, and sitemaps by Search1 API
+- [Playwright MCP](https://github.com/microsoft/playwright-mcp) - <img src="./images/languages/typescript.svg" > A Model Context Protocol (MCP) server that provides browser automation capabilities using Playwright. This server enables LLMs to interact with web pages through structured accessibility snapshots, bypassing the need for screenshots or visually-tuned models.
 
 ### code
 
@@ -82,6 +83,12 @@
 - [Linear](https://github.com/jerhadf/linear-mcp-server) - <img src="./images/languages/typescript.svg" > Project management and issue tracking
 - [Spotify](https://github.com/varunneal/spotify-mcp) - <img src="./images/languages/python.svg" > Control Spotify playback and manage playlists
 - [PBS API](https://github.com/matthewdcage/pbs-mcp-server) - <img src="./images/languages/typescript.svg" > A standalone Model Context Protocol (MCP) server that allows AI models to access the Australian Pharmaceutical Benefits Scheme (PBS) API, which contains information about medicines, pricing, and availability in Australia.
+- [BlenderMCP](https://github.com/ahujasid/blender-mcp) - <img src="./images/languages/python.svg" > BlenderMCP connects Blender to Claude AI through the Model Context Protocol (MCP), allowing Claude to directly interact with and control Blender. This integration enables prompt assisted 3D modeling, scene creation, and manipulation.
+- [WhatsApp MCP Server](https://github.com/lharries/whatsapp-mcp) - <img src="./images/languages/typescript.svg" > This is a Model Context Protocol (MCP) server for WhatsApp.With this you can search you personal Whatsapp messages, search your contacts and send messages to either individuals or groups.
+- [ghidraMCP](https://github.com/LaurieWired/GhidraMCP) - <img src="./images/languages/python.svg" > ghidraMCP is an Model Context Protocol server for allowing LLMs to autonomously reverse engineer applications. It exposes numerous tools from core Ghidra functionality to MCP clients.
+- [Framelink Figma MCP Server](https://github.com/GLips/Figma-Context-MCP) - <img src="./images/languages/typescript.svg" > Give your coding agent access to your Figma data. Implement designs in any framework in one-shot.
+- [Firecrawl MCP Server](https://github.com/mendableai/firecrawl-mcp-server) - <img src="./images/languages/typescript.svg" > A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for web scraping capabilities.
+- [Unity MCP](https://github.com/justinpbarnett/unity-mcp) - <img src="./images/languages/python.svg" > A Unity package that enables seamless communication between Unity and Large Language Models (LLMs) like Claude Desktop via the Model Context Protocol (MCP). This server acts as a bridge, allowing Unity to send commands to and receive responses from MCP-compliant tools, empowering developers to automate workflows, manipulate assets, and control the Unity Editor programmatically.
 
 ### location & time
 
