@@ -1,5 +1,8 @@
 # awesome-mcp
 
+> [!TIP]
+> Come and submit your favorite MCP Servers, [click it](https://github.com/aimcp/awesome-mcp/issues/new?template=add-mcp-server.md).
+
 ## Mcp Servers
 
 ### official
