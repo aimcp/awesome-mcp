@@ -287,6 +287,13 @@
       "repo_url": "https://github.com/justinpbarnett/unity-mcp",
       "tags": ["integration"],
       "language": "python"
+    },
+    {
+      "name": "QA Sphere MCP Server",
+      "description": "his integration enables Large Language Models (LLMs) to interact directly with QA Sphere test cases, allowing you to discover, summarize, and chat about test cases. In AI-powered IDEs that support MCP, you can reference specific QA Sphere test cases within your development workflow.",
+      "repo_url": "https://github.com/Hypersequent/qasphere-mcp",
+      "tags": ["integration"],
+      "language": "typescript"
     }
   ]
 }
