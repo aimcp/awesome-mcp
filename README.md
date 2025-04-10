@@ -92,6 +92,7 @@
 - [Framelink Figma MCP Server](https://github.com/GLips/Figma-Context-MCP) - <img src="./images/languages/typescript.svg" > Give your coding agent access to your Figma data. Implement designs in any framework in one-shot.
 - [Firecrawl MCP Server](https://github.com/mendableai/firecrawl-mcp-server) - <img src="./images/languages/typescript.svg" > A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for web scraping capabilities.
 - [Unity MCP](https://github.com/justinpbarnett/unity-mcp) - <img src="./images/languages/python.svg" > A Unity package that enables seamless communication between Unity and Large Language Models (LLMs) like Claude Desktop via the Model Context Protocol (MCP). This server acts as a bridge, allowing Unity to send commands to and receive responses from MCP-compliant tools, empowering developers to automate workflows, manipulate assets, and control the Unity Editor programmatically.
+- [QA Sphere MCP Server](https://github.com/Hypersequent/qasphere-mcp) - <img src="./images/languages/typescript.svg" > his integration enables Large Language Models (LLMs) to interact directly with QA Sphere test cases, allowing you to discover, summarize, and chat about test cases. In AI-powered IDEs that support MCP, you can reference specific QA Sphere test cases within your development workflow.
 
 ### location & time
 
